@@ -1,0 +1,238 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 
+1. Từ ngoài vào trong
+2. Từ trên xuống dưới
+3. Tổng quan đến chi tiết
+*/
+
+/* 
+1. Vị trí
+2. Kích thước (width, height)
+3. Màu sắc
+4. Kiểu dáng (kiểu chữ, hình tròn, vuông, ...)
+*/
+
+.clear {
+    clear: both;
+}
+
+#main {
+
+}
+
+#nav {
+    display: inline-block;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background-color: #000;
+    z-index: 1;
+}
+
+#nav, .subnav {
+    list-style-type: none;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .subnav {
+    display: none;
+    min-width: 250px;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav a {
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#nav .nav-arrow-down {
+    font-size: 14px;
+}
+
+#header .search-btn {
+    float: right;
+    padding: 0 21px;
+    cursor: pointer;
+}
+
+#header .search-btn:hover {
+    background-color: red;
+}
+
+#header .search-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 66.7%;
+    background: url('/assets/img/slider/slider1.jpg') top center / cover no-repeat;
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 48px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+#slider .text-heading {
+    font-size: 50px;
+}
+
+#slider .text-description {
+    font-size: 30px;
+    margin-top: 25px;
+}
+
+#content {
+    
+}
+
+#content .content-section {
+    width: 1200px;
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .section-heading {
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+#content .section-sub-heading {
+    margin-top: 30px;
+    font-size: 30px;
+    text-align: center;
+    font-style: italic;
+}
+
+#content .about-text {
+    margin-top: 30px;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+#content .work-list {
+    margin-top: 48px;
+    /* overflow: hidden; */
+}
+
+#content .work-item {
+    float: left;
+    width: 33.333333%;
+    text-align: center;
+}
+
+#content .work-name {
+    font-size: 25px;
+}
+
+#content .work-img {
+    width: 250px;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+#content .contact-section {
+    font-weight: bold;
+    width: 600px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 2.2;
+    letter-spacing: 1px;
+}
+
+.contact-section i[class*="ti-"] {
+    width: 40px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+#footer {
+    padding: 64px 16px 0px 16px;
+    text-align: center;
+    background-color: #ccc;
+}
+
+#footer .socials-list {
+    font-size: 50px;
+}
+
+#footer .socials-list a {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+#footer .copyright a:hover,
+#footer .socials-list a:hover {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+#footer .copyright {
+    margin-top: 20px;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 30px;
+}
+
+#footer .copyright a {
+    color: rgba(0, 0, 0, 0.6);
+}
